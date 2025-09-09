@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Assignment</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div id="side-menu">
+     <ul>
+      <li><a href="index.html">Home</a></li> 
+      <li><a href="AvailableServices.html">Available services</a></li>
+      <li><a href="Order coffee.html">Order Coffee</a></li>
+      <li><a href="RateOurService.html">Rate our service</a></li>
+      <li><a href="Help.html">Help</a></li>
+      <li><a href="Contacts.html">Contacts</a></li>
+     </ul>
+     </div>
+     <!-- header section-->
+     <header>
+       <div class="logo-area">
+         <img src="images/logo1.jpg" width="150px" height="auto" style="margin-left:19px; margin-top:5px">
+         <button onclick="showSidemenu()" id="side-menu-toggler">☰</button>
+       </div>
+     </header>
+     <div class="availableSection">
+        <p class="rateBox">Rate now</p>
+        <div class="allStar">
+       <span id="star1" onclick="rate('star1')">&#10029;</span>
+       <span id="star2" onclick="rate('star2')">&#10029;</span>
+       <span id="star3" onclick="rate('star3')">&#10029;</span>
+       <span id="star4" onclick="rate('star4')">&#10029;</span>
+       <span id="star5"  onclick="rate('star5')">&#10029;</span>
+       </div>
+       <button class="orderButton">Send Rate</button>
+     </div>
+     
+     
+     
+                    <!-- footer region-->
+      <footer id="welcomeDiv">
+        <div class="footerText">
+       <center><h2>Details of Get Coffee Limited</h2>
+        </center> 
+        Get Coffee Limited Company is own by <b>Engr. Benjamin Paul Ojogbaduwa </b>he also design the website by his self.
+        <p>this company is well known across many states in nigeria.</p>
+        
+        <b><i>&copy;2025 All right reserved</i></b>
+        </div>
+      </footer>
+      
+      <script src="Index.js"></script>
+     <script>
+       var star1 = document.getElementById("star1")
+       var star2 = document.getElementById("star2")
+       var star3 = document.getElementById("star3")
+       var star4 = document.getElementById("star4")
+       var star5 = document.getElementById("star5")
+       function rate(star){
+         let rateMe = document.getElementById(star)
+         if (star == "star1"){
+           star1.style.color = "#ff9b0b"
+           star2.style.color = "#000"
+           star3.style.color = "#000"
+           star4.style.color = "#000"
+           star5.style.color = "#000"
+         }
+         else if(star == "star2"){
+           star1.style.color = "#ff9b0b"
+           star2.style.color = "#ff9b0b"
+          star3.style.color = "#000"
+           star4.style.color = "#000"
+           star5.style.color = "#000"
+         }
+         else if(star == "star3"){
+           star1.style.color = "#ff9b0b"
+           star2.style.color = "#ff9b0b"
+           star3.style.color = "#ff9b0b"
+           star4.style.color = "#000"
+           star5.style.color = "#000"
+         }
+         else if(star == "star4"){
+           star1.style.color = "#ff9b0b"
+           star2.style.color = "#ff9b0b"
+           star3.style.color = "#ff9b0b"
+           star4.style.color = "#ff9b0b"
+           star5.style.color = "#000"
+         }
+         else if(star == "star5"){
+           star1.style.color = "#ff9b0b"
+           star2.style.color = "#ff9b0b"
+           star3.style.color = "#ff9b0b"
+           star4.style.color = "#ff9b0b"
+           star5.style.color = "#ff9b0b"
+         }
+       }
+     </script>
+  </body>
+</html>

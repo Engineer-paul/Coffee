@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Assignment</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div id="side-menu">
+     <ul>
+      <li><a href="index.html">Home</a></li> 
+      <li><a href="AvailableServices.html">Available services</a></li>
+      <li><a href="Order coffee.html">Order Coffee</a></li>
+      <li><a href="RateOurService.html">Rate our service</a></li>
+      <li><a href="Help.html">Help</a></li>
+      <li><a href="Contacts.html">Contacts</a></li>
+     </ul>
+     </div>
+     <!-- header section-->
+     <header>
+       <div class="logo-area">
+         <img src="images/logo1.jpg" width="150px" height="auto" style="margin-left:19px; margin-top:5px">
+         <button onclick="showSidemenu()" id="side-menu-toggler">☰</button>
+       </div>
+     </header>
+     <section class="availableSection" id="mainSection">
+       <h2>Place your order here</h2>
+       <p class="noteBox"><b>Note:</b>You must give a well explain and understanding address</p>
+       <h4>Fill the below form corectly and submit</h4>
+       
+       <label class="label">Enter full name:</label>
+       <input type="text" required class="enter" id="input1">
+       
+       <label class="label">phone number:</label>
+       <input type="number" required class="enter"id="input2">
+       
+       <label class="label">Email address:</label>
+       <input type="email" id="input3" required class="enter">
+       
+       <label class="label">Select cup size</label>
+       <p class="noteBox">Note: Ensure you check the price of each cup size from the home section before you select it here.</p>
+       <select id="selectCup">
+         <option value="1">Select cup size</option>
+         <option value="2">Size 1 cup</option>
+         <option value="3">Size 2 cup</option>
+         <option value="4">Size 3 cup</option>
+         <option value="5">Size 4 cup</option>
+       </select>
+      
+       <label class="label">Enter number of cup you want below:</label>
+       <input type="number" id="textarea" required class="enter">
+       
+       <label class="label">house address:</label>
+     <textarea id="input4" class="enter" style="padding:8px;"></textarea>
+       
+       <button class="orderButton" id="firstOrderButton" onclick="getPrice()">Submit</button>
+     </section>
+     <section class="order" id="order">
+         <h2>About to purchase this cup</h2>
+         <img id="img" width="250px" height="auto">
+         <p><font color="green">Dear<span id="input1venue"style="font-weight:bold;"></span>you are about to purchase <span id="cupValue"></span> of the cup  above filled with coffee.</font>  </p>
+     </section>
+    <section class="availableSection" id="finalPurchasePriceCheck">
+      <h3>Recheck the course of purchase before you submit</h3>
+      <h5><font color="red">The above image is what you are about to order.</font></h5>
+      <h4>Information of purchase</h4>
+      <p class="priceBox"> <b>Price per cup:</b><span id="unitPrice"></span>Naira</p>
+      <p class="priceBox"><b>Number of cup:</b><span id="cupValue2"></span></p>
+      <p class="priceBox"><b>Total Price:</b><span id="displayRegion">___</span> Naira</p>
+      <form action="SuccessfulPurchase.html">
+      <label class="label">Ready to continue with purchase?</label>
+      <label>Yes</label><input type="radio"  name="yesOrNo" id="yes"  class="checkbox">
+      <label>No</label><input type="radio" name="yesOrNo"  id="no">
+      <button class="orderButton">Place Order</button>
+      </form>
+    </section>
+              <!-- footer region-->
+      <footer id="welcomeDiv">
+        <div class="footerText">
+       <center><h2>Details of Get Coffee Limited</h2>
+        </center> 
+        Get Coffee Limited Company is own by <b>Engr. Benjamin Paul Ojogbaduwa </b>he also design the website by his self.
+        <p>this company is well known across many states in nigeria.</p>
+        
+        <b><i>&copy;2025 All right reserved</i></b>
+        </div>
+      </footer>
+      
+     
+     <script src="Index.js">
+     </script>
+     <script>
+    /*  var input1 = document.getElementById("input1")
+      var input2 = document.getElementById("input2")
+      var input3 = document.getElementById("input3")
+      var input4 = document.getElementById("input4")
+      
+      let but = document.getElementById("firstOrderButton")
+      but.addEventListener('click',determineNext)
+      function determineNext(){
+        var input11 = input1.value
+        var input22 = input2.value
+        var input33 = input3.value
+        var input44 = input4.value
+        if((input11==""||input22=="")||(input33==""||input44=="")){
+          alert("fill all the form")
+        }
+      }*/
+     </script>
+  </body>
+</html>
